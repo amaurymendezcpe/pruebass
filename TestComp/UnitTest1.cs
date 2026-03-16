@@ -6,6 +6,7 @@ public class UnitTest1
     public void Test1()
     {
         Contador cuenta = Contador();
-        Assert.Equal(cuenta.valor,1);
+        var valor = cuenta.Incrementar();
+        Assert.Equal(valor,1);
     }
 }
